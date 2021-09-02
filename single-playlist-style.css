@@ -1,0 +1,590 @@
+:root{
+
+
+    --background-image: url("Media/13726841.jpg")
+
+
+
+}
+body{
+  background-image: var(--background-image);
+
+
+}
+#navigation-bar{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             border: none;
+             margin: 0px 0px;
+             border-radius: 5px;
+             background-image: var(--background-image);
+             
+
+
+}
+/*ech division of nav div are oriented through flex*/
+#navigation-bar>div{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*to place the text and other elements of each div in respective centers 
+justify and align are used */
+/*text standard color fixing*/
+h2,h4{
+margin: 0px;
+color: white;
+}
+a{
+text-decoration: none;
+color: white;
+}
+
+
+
+#Logo img{
+    height:73px ;
+    width:74px;
+    border-radius: 50%;
+  position: relative;
+  animation: rotation 1s infinite linear;
+
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+#title_logo>div{
+ display: inline-block;
+ vertical-align: middle;
+
+}
+.favourites {
+    font-size: 125%;
+    font-variant: small-caps;
+
+
+}
+.search{
+  width: 20%;
+  position: relative;
+
+}
+.search input {
+ 
+  font: 16px system-ui;
+  color: black;
+  height: 44%;
+  width: 104%;
+  padding: 1px 10px;
+  border-radius: 17px;
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.fa-search{
+ color: white;
+ margin-left: 8px;
+ height: 20%;
+  width: 20%;
+}  
+/*common styles for all fa icons*/
+.fa-bell{
+ 
+  color: white;
+  font-size: 200%;
+
+}
+.fa-bell:hover{
+ color: yellow; 
+
+}
+.profile-pics img{
+ height:73px ;
+ width:74px;
+border-radius: 50%;
+position: relative ;
+right: 90%;
+
+}
+main {
+  width: 100%;
+  padding: 0% 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all ease-in-out 1s;
+  margin-left: -10%;
+}
+.section-1{
+  height: 80vh;
+  width: 70%;
+  
+  margin-left: 15%;
+}
+
+.section-1-header{
+  width: 100%;
+  height: 50%;
+  background-color:#530c82;
+  display: flex;
+  flex-direction: row;
+    
+
+}
+.section-1-header img{
+ height: 80%;
+ width: 40%;
+ position: relative;
+ margin: 3%;
+ opacity: 0.7;
+}
+.play-all{
+ background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+ color: white;
+ height: 15%;
+ width: 100%;
+ position: relative;
+ top: 80%;
+ font-size: 100%;
+}
+.follow{
+   background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+   position: relative;
+   top: 65%;
+   left: 125%;
+   height:15% ;
+   width: 100%;
+   font-size: 100%;
+}
+.Description{
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   color: white;
+   font-family: serif;
+   font-style: italic;
+
+}
+.head-extras{
+ display: inline-block;
+}
+.play-and-follow{
+border: none;  
+font-size: 100%;
+background: rgb(36,13,221);
+color: white;
+background: linear-gradient(165deg, rgba(36,13,221,1) 0%, rgba(67,212,215,1) 95%);
+margin-right: 10%;
+}
+
+.playlist-content-layout{
+          margin-top: 5%;
+          width: 100%;
+          height: 40%;
+          overflow: scroll;
+
+
+}
+.playlist-content-layout::-webkit-scrollbar {
+  display: none;
+}
+.content-box{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+
+}
+.content-box{
+ height: 30%;
+ max-height: 125px;
+ width: 100%;
+ margin: 5%;
+ padding: 2%;
+ background: rgb(36,13,221);
+background: linear-gradient(165deg, rgba(36,13,221,1) 0%, rgba(133,33,155,1) 95%);
+}
+.content-box:hover{
+ box-shadow: 0px 0px 2px 2px white;
+ transition: ease-in 0.1s;
+ 
+}
+.content-box:hover i{
+ color: red;
+ 
+}
+.content-box p{
+ color: white;
+ font-size: 100%;
+ text-align: center;
+ position: relative;
+ left: 0%;
+ margin-right: 5%;
+
+}
+.content-box i{
+ position: relative;
+ right:-10%;
+ top: 20%;
+ font-size: 150%;
+
+}
+.content-box img{
+ height: 115%;
+ width: 12%;
+ margin-right: 17%; 
+}
+.content-box div{
+  height: 100%;
+  width: 30%;
+  margin-left: -15%;
+ }
+ .section-2{
+  height: 80vh;
+  width: 25%;
+  position: relative;
+  left: 10%;
+  ;
+
+ }
+ .similar-artists{
+     height: 30vh;
+     overflow: scroll;
+     margin-top: 10%;
+
+ }
+ .similar-artists::-webkit-scrollbar {
+  display: none;
+}
+ .similar-artists-header {
+  position: relative ;
+  left: 0%;
+  top:0% ;
+  margin-bottom: 10%;
+ }
+ .similar-artist-content-layout{
+  margin-top: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+
+ }
+ .similar-artist-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: auto;
+   width: 100%;
+   margin-top: 2%;
+   color: white;
+   background: rgb(36,13,221);
+background: linear-gradient(165deg, rgba(36,13,221,1) 0%, rgba(133,33,155,1) 95%);
+   border: 2px solid #530c82;
+ }
+ .similar-artist-content img{
+    height: 20%;
+    width: 20%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+ }
+ .Description-similar-artists{
+    display: block;
+    margin-top: -6%;
+    color: white;
+    text-align: center;
+    height: 20%;
+    width: 53%;
+ }
+ .similar-artist-content:hover{
+  transition: ease-in 0.3s;
+  background-color: black;
+  border: 2px solid white;
+ }
+
+
+ .recently-played{
+     height: 40vh;
+     overflow: scroll;
+     margin-top: 10%;
+
+ }
+ .recently-played::-webkit-scrollbar {
+  display: none;
+}
+ .recently-played-header {
+  position: relative;
+  left: 0%;
+  top:0% ;
+  margin-bottom: 10%;
+  
+ }
+ .recently-played-content-layout{
+  margin-top: 10%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+
+ }
+ .recently-played-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   height: auto;
+   width: 100%;
+   margin-top: 2%;
+   color: white;
+   background: rgb(36,13,221);
+background: linear-gradient(165deg, rgba(36,13,221,1) 0%, rgba(133,33,155,1) 95%);
+   border: 2px solid #530c82;
+ }
+ .recently-played-content img{
+    height: 20%;
+    width: 20%;
+    position: relative;
+    top: 10%;
+    left: 10%;
+ }
+ .Description-recently-played{
+    display: block;
+    margin-top: -6%;
+    color: white;
+    text-align: center;
+    height: 20%;
+    width: 53%;
+ }
+ .recently-played-content:hover{
+  transition: ease-in 0.3s;
+  background-color: black;
+  border: 2px solid white;
+ }
+ /* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+  /* border:1px solid white; */
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
+/* current song image */
+#song-image img {
+  width: 125%;
+  height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+  height: 100%;
+  padding-top: 4%;
+  color: white;
+}
+/* song decscription */
+.song-desc {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+  font-size: 100%;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+  font-size: 80%;
+}
+
+/* 2. Second part of the footer*/
+.player {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: white;
+
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+/* this is the song-duration slider */
+#slider {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+/* ////////// */
+.time {
+  margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+  width: 100%;
+}
+/* for audio and main center player */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: white;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  color: white;
+}
+/* hover effect for the slider */
+.slider:hover {
+  opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+footer {
+  position: absolute;
+  bottom: 1px;
+  width: 100vw;
+  height: 60px;
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  padding: 0px 3%;
+  box-sizing: border-box;
+  z-index: 6;
+  margin-left: -1%;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

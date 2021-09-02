@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Soundit--Web Player</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://kit.fontawesome.com/fa4474a818.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div id="navigation-bar">
+		<div id="title_logo">
+			<div id="Logo">
+				<img src="Media/logo.svg">
+		     </div>
+		     <div id="title">
+	               <h2>Soundit</h2>
+	               <h4>Music player</h4>
+		     </div>
+	  </div>	
+	    <div class="favourites">
+	    	<a href=#>Favourites</a>
+	    </div>	
+	    <div class="search">
+                <input type="search" id="query" name="q" placeholder="Search...">
+                <i class="fas fa-search"></i>
+        </div>
+        <div id="notification-icon">
+        	<i class="fas fa-bell"></i>
+
+        </div>
+        <div class="profile-pics">
+             <img src="Media/cheems.jpg">
+        </div>
+</div>
+<!-- End of main section -->
+<main>
+	<aside class="aside section-1">
+		<div class="outer-carousel">
+               <div class="carousel">
+                   <img src="Media/carousel/carousel1.jpg">
+                   <img src="Media/carousel/carousel2.jpg">
+                   <img src="Media/carousel/carousel3.jpg">
+                </div>
+
+          </div>
+      	<div class="latest-releases">
+      		<h1 class="left-text">Latest Releases</h1>
+               <div class="latest-release-tiles">
+               	<!--Card 1  -->
+                 <div class="card">
+               	<div class="tile">
+               		<img src="Media/Latest-releases/Origins.jpg">
+
+               		 <div class="play-button" >
+                               <i class="fas fa-play"></i>
+                            </div>
+
+               	</div>
+               	<div class="song-description">
+               		<h3>
+                                Top of the world
+                            </h3>
+                            <p>
+                                Dec , 2020
+                            </p>
+
+               	</div>
+               	 <div class="options">
+                            <label for="latest-release-checkbox"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <!-- if user clicks on play now button, he/she will be taken to the single playlist page -->
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <!-- duration of the song -->
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+
+               </div>
+               <!-- Card 2 -->
+                 <div class="card">
+               	<div class="tile">
+               		<img src="Media/Latest-releases/It's Time.jpeg">
+
+               		 <div class="play-button" >
+                               <i class="fas fa-play"></i>
+                            </div>
+
+               	</div>
+               	<div class="song-description">
+               		<h3>
+                                Top of the world
+                            </h3>
+                            <p>
+                                Dec , 2020
+                            </p>
+
+               	</div>
+               	 <div class="options">
+                            <label for="latest-release-checkbox2"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox2">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+               	
+               </div>
+               <!-- Card 3 -->
+               <div class="card">
+               	<div class="tile">
+               		<img src="Media/Latest-releases/coldplay.jpg">
+
+               		 <div class="play-button" >
+                               <i class="fas fa-play"></i>
+                            </div>
+
+               	</div>
+               	<div class="song-description">
+               		<h3>
+                                Top of the world
+                            </h3>
+                            <p>
+                                Dec , 2020
+                            </p>
+
+               	</div>
+               	 <div class="options">
+                            <label for="latest-release-checkbox3"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox3">
+                            <div class="latest-release-dropdown">
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+               	
+               </div>
+               <!--Card 4  -->
+               <div class="card">
+               	<div class="tile">
+               		<img src="Media/Latest-releases/top-of-the-world.png">
+
+               		 <div class="play-button" >
+                               <i class="fas fa-play"></i>
+                            </div>
+
+               	</div>
+               	<div class="song-description">
+               		<h3>
+                                Top of the world
+                            </h3>
+                            <p>
+                                Dec , 2020
+                            </p>
+
+               	</div>
+               	<div class="options">
+                            <!-- NOTE THAT POSITION OF OPTIONS DIV IS RELATIVE -->
+                            <label for="latest-release-checkbox4"><i class="fas fa-ellipsis-h"></i></label>
+                            <input type="checkbox" id="latest-release-checkbox4">
+                            <div class="latest-release-dropdown">
+                                
+                                <div class="drop-item">
+                                    <p><i class="fas fa-play-circle"></i> <a href="Single Playlist Screen.html">Play
+                                            Now</a></p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-list-ul"></i> Add to Queue</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-music"></i> Add to playlist</p>
+                                </div>
+                                <hr>
+                                <div class="drop-item">
+                                    <p><i class="fas fa-info-circle"></i> Get Info</p>
+                                </div>
+                            </div>
+                            <p>
+                                4:44
+                            </p>
+                        </div>
+                    </div>
+
+               	
+               </div>
+
+
+               </div>
+        <div class="popular-artists-layout">
+               <h2>Popular Artists</h2>
+               <div class="popular-artists">
+            <!-- in popular artist layout---popular artist heading and content section are separated -->
+            <!-- each content section(popular artists div) has popular-artist-boxcontaining each artist content -->
+                      
+                <div class="popular-artists-box">
+
+                      <a href="single-playlist.html"><img src="Media/popular-artists/ed-sheeram.jpg"></a>
+                      <div class="play-key"><i class="fas fa-play"></i></div>
+                      <p>Ed Sheeran</p>
+               </div>
+               <div class="popular-artists-box">
+
+                      <a href="single-playlist.html"><img src="Media/popular-artists/Coldplay.jpg"></a>
+                      <div class="play-key"><i class="fas fa-play"></i></div>
+                      <p>Cold Play</p>
+               </div>
+               <div class="popular-artists-box">
+
+                      <a href="single-playlist.html"><img src="Media/popular-artists/zayn.jpg"></a>
+                      <div class="play-key"><i class="fas fa-play"></i></div>
+                      <p>Zayn</p>
+               </div>
+               <div class="popular-artists-box">
+
+                      <a href="single-playlist.html"><img src="Media/popular-artists/justin.jpg"></a>
+                      <div class="play-key"><i class="fas fa-play"></i></div>
+                      <p>Justin Bieber</p>
+               </div>
+               <div class="popular-artists-box">
+
+                      <a href="single-playlist.html"><img src="Media/popular-artists/imagine.webp"></a>
+                      <div class="play-key"><i class="fas fa-play"></i></div>
+                      <p>Imagine Dragons</p>
+               </div>
+
+               </div>
+          </div>
+          <div class="stations">
+               <div class="stations-iconstyle">
+                 <div class="color1">
+                       <div class="color2">
+                            <div class="color3">
+                                    <!-- <img src="Media/stations/logo.jpg"> -->
+                                    <p>Stations</p>
+                                    <div class="play-station">
+                                        <img src="Media/stations/play.png">
+                                    </div>
+
+
+
+                            </div>    
+                        </div>
+                </div>
+
+
+
+
+               </div>
+
+              <div class="stations-content">
+                    <div class="theme">
+                            <img src="Media/themes/cool.jpg">
+                            <p>Cool</p>
+                    </div>
+                    <div class="theme">
+                            <img src="Media/themes/jazz.jpg">
+                            <p>Jazz</p>
+                    </div>
+                    <div class="theme">
+                            <img src="Media/themes/workout.jpg">
+                            <p>Workout</p>
+                    </div>
+                    <div class="theme">
+                            <img src="Media/themes/rock.jpg">
+                            <p>Rock</p>
+                    </div>
+                    <div class="theme">
+                            <img src="Media/themes/retro.jpg">
+                            <p>Retro</p>
+                    </div>
+
+
+
+              </div>
+
+
+
+
+
+
+
+
+         </div>
+         <div class="special-section">
+            <div class="special-section-box">
+                <img src="Media/special-section/party.jpg">
+                <p>Party</p>
+            </div>
+
+            <div class="special-section-box">
+                    <img src="Media/special-section/electronic.jpg">
+                   <p>Electronic</p>
+            </div>
+            
+            <div class="special-section-box">
+            <img src="Media/special-section/roadtrip.jpg">
+                  <p>Road Trip</p>
+           </div>
+
+      </div>
+         <div class="latest-english">
+            <h2>Latest English</h2>
+            <div class="latest-english-content">
+
+                <div class="latest-english-box">
+
+                    <img src="Media/latest-english/believer.jpg">
+                    <h4>Believer</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-english-box">
+
+                    <img src="Media/latest-english/deepcuts.jpg">
+                    <h4>Deep cuts</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-english-box">
+
+                    <img src="Media/latest-english/followyou.jpg">
+                    <h4>Follow You</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-english-box">
+
+                    <img src="Media/latest-english/tillkingdomecome.jpg">
+                    <h4>Till Kingdom Comes</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-english-box">
+
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+ </div>
+
+</div>
+        <div class="latest-hindi">
+                <h2>Latest Hindi</h2>
+           <div class="latest-hindi-content">
+                <div class="latest-hindi-box">
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-hindi-box">
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-hindi-box">
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-hindi-box">
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+                <div class="latest-hindi-box">
+                    <img src="Media/latest-english/Unstoppable.jpeg">
+                    <h4>Unstoppable</h4>
+                    <p>AUG 19 2020</p>
+
+                </div>
+
+
+           </div> 
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</aside>
+    <!-- aside section 1 is complete -->
+    <aside class="section-2">
+                 <div class="section-2-header">
+                    <h1>Playlist</h1>
+                    <h4>
+                        <a href="#queue-option-box">Queue <i class="fas fa-chevron-circle-down"></i></a>
+                    </h4>
+                </div>
+                <div class="queue-options" id="queue-option-box">
+                    <p><a href style="color:#007bff; font-weight:bolder;">Playlists</a></p>
+                    <hr>
+                    <p><a href style="color:#007bff; font-weight:bolder;">Favourite songs</a></p>
+                    <hr>
+                    <p><a href="#" style="color:red; font-weight:bolder;">Close</a></p>
+            </div>
+            <div class="playlist-content-layout">
+                    <div class="content-box">
+                                <p>01</p>
+                                <img src="Media/playlist/Origins.jpg">
+                                 <div class="details">
+                              <p>
+                                    Origins<br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div>
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>02</p>
+                                <img src="Media/playlist/deepcuts.jpg">
+                                 <div class="details">
+                              <p>
+                                    Deep Cuts <br>
+                                    <br>
+                                    Cold Play
+                                </p>
+
+                            </div>
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>03</p>
+                                <img src="Media/playlist/followyou.jpg">
+                                 <div class="details">
+                              <p>
+                                    Follow You <br>
+                                    <br>
+                                    Cold Play
+                                </p>
+
+                            </div>
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>04</p>
+                                <img src="Media/playlist/Origins.jpg">
+                                 <div class="details">
+                              <p>
+                                    Origins <br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div>
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>05</p>
+                                <img src="Media/playlist/believer.jpg">
+                            <div class="details">
+                              <p>
+                                    Believer <br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    
+                    <div class="content-box">
+                                <p>06</p>
+                                <img src="Media/playlist/It's Time.jpeg">
+                            <div class="details">
+                              <p>
+                                    It's Time  <br>
+                                    <br>
+                                    Cold Play
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>07</p>
+                                <img src="Media/playlist/Unstoppable.jpeg">
+                            <div class="details">
+                              <p>
+                                    Unstoppable<br>
+                                    <br>
+                                    Score
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>08</p>
+                                <img src="Media/playlist/believer.jpg">
+                            <div class="details">
+                              <p>
+                                    Believer <br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>09</p>
+                                <img src="Media/playlist/believer.jpg">
+                            <div class="details">
+                              <p>
+                                    Believer <br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    <div class="content-box">
+                                <p>10</p>
+                                <img src="Media/playlist/believer.jpg">
+                            <div class="details">
+                              <p>
+                                    Believer <br>
+                                    <br>
+                                    Imagine Dragons
+                                </p>
+
+                            </div> 
+                                
+                                <i class="far fa-heart"></i>  
+
+
+
+                    </div>
+                    
+                    
+                                
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</aside>
+
+</main>
+ <footer>
+        <div class="active-song-description">
+            <!-- song image -->
+            <div id="song-image">
+                <img src="Media/playlist/deepcuts.jpg">
+            </div>
+            <!-- song name and author -->
+            <div class="song-desc">
+                <div>
+                    Deep cuts
+                </div>
+                <div>
+                    Cold Play
+                </div>
+                <!-- heart icon and ban icon -->
+            </div>
+            <div class="heart-and-ban-icon">
+                <span>
+                    <i class="far fa-heart"></i>
+                </span>
+                <span>
+                    <i class="fas fa-ban"></i>
+                </span>
+            </div>
+        </div>
+        <!-- these are the main player controls -->
+        <div class="player">
+            <div class="controls">
+                <div><i class="fas fa-random"></i></div>
+                <div><i class="fas fa-step-backward"></i></div>
+                <div><i class="fas fa-pause-circle"></i></div>
+                <div><i class="fas fa-step-forward"></i></div>
+                <div><i class="fas fa-redo"></i></div>
+            </div>
+            <!-- this is the slider -->
+            <div id="slider">
+                <!-- current time -->
+                <div class="time">
+                    1:39
+                </div>
+                <div class="slidecontainer">
+                    <input type="range" min="0" max="100" value="0" class="slider" id="myRange">
+                </div>
+                <!-- total time -->
+                <div class="time">
+                    4:44
+                </div>
+            </div>
+        </div>
+        <!-- other icons including the volume slider and all -->
+        <div class="extras">
+            <div>
+                <i class="fas fa-list-ul"></i>
+            </div>
+            <div>
+                <i class="fas fa-laptop"></i>
+            </div>
+            <div>
+                <i class="fas fa-volume-up"></i>
+            </div>
+            <div class="slidecontainer" style="width:30%;">
+                <input type="range" min="0" max="100" value="0" class="slider" id="myRange" style="margin-top:0px;">
+            </div>
+            <div>
+                <i class="fas fa-expand-alt"></i>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

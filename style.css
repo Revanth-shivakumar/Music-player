@@ -1,0 +1,895 @@
+:root{
+
+
+    --background-image: url("Media/13726841.jpg")
+
+
+
+}
+body{
+  background-image: var(--background-image);
+
+
+}
+#navigation-bar{
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             border: none;
+             margin: 0px 0px;
+             border-radius: 5px;
+             background-image: var(--background-image);
+             
+
+
+}
+/*ech division of nav div are oriented through flex*/
+#navigation-bar>div{
+	display: flex;
+	flex-direction: row;
+	margin: 1% 5%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+/*to place the text and other elements of each div in respective centers 
+justify and align are used */
+/*text standard color fixing*/
+h2,h4{
+margin: 0px;
+color: white;
+}
+a{
+text-decoration: none;
+color: white;
+}
+
+
+
+#Logo img{
+	height:73px ;
+	width:74px;
+	border-radius: 50%;
+  position: relative;
+  animation: rotation 1s infinite linear;
+
+
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+
+#title_logo>div{
+ display: inline-block;
+ vertical-align: middle;
+
+}
+.favourites {
+	font-size: 125%;
+	font-variant: small-caps;
+
+
+}
+.search{
+  width: 20%;
+  position: relative;
+
+}
+.search input {
+ 
+  font: 16px system-ui;
+  color: black;
+  height: 44%;
+  width: 104%;
+  padding: 1px 10px;
+  border-radius: 17px;
+  text-decoration: none;
+}
+input:focus {
+  outline: none;
+}
+.fa-search{
+ color: white;
+ margin-left: 8px;
+ height: 20%;
+  width: 20%;
+}  
+/*common styles for all fa icons*/
+.fa-bell{
+ 
+  color: white;
+  font-size: 200%;
+
+}
+.fa-bell:hover{
+ color: yellow; 
+
+}
+.profile-pics img{
+ height:73px ;
+ width:74px;
+border-radius: 50%;
+position: relative ;
+right: 90%;
+
+}
+main {
+  width: 100%;
+  padding: 0% 3%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  transition: all ease-in-out 1s;
+}
+.aside{
+  display: inline-block;
+  
+  margin-left: -33%;
+
+}
+.section-1 {
+  width: 70%;
+  height: 80vh;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-left: 0%;
+}
+/*hiding scroll-bar of section 1*/
+.section-1::-webkit-scrollbar {
+  display: none;
+}
+.outer-carousel {
+  position: relative;
+  left: 8vw;
+  margin-top: 5%;
+  transition: all ease-in-out 1s;
+}
+/* carousel */
+.carousel {
+  position: absolute;
+  left: 4%;
+  width: 70%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  overflow: visible;
+  justify-content: space-around;
+}
+/* size and transition images in the carousel */
+.carousel img {
+  height: 15vw;
+  width: 22.5vw;
+  transition: all cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.2s;
+  border-radius: 5%;
+}
+
+/* third image in the carousel */
+.carousel img:nth-child(1) {
+  position: relative;
+  left: 41vw;
+  z-index: 2;
+}
+/* image in the middle of the carousel */
+.carousel img:nth-child(2) {
+  z-index: 3;
+}
+
+/*  the first image in the carousel */
+.carousel img:nth-child(3) {
+  position: relative;
+  right: 41vw;
+  z-index: 1;
+}
+
+/* animations for carousel */
+
+.carousel img:hover {
+  z-index: 4;
+  box-shadow: 0px 0px 12px 0.1px black;
+  height: 18vw;
+  width: 27vw;
+}
+.left-text{
+text-align: left;
+}
+.latest-releases{
+
+ color: white;
+ position: relative;
+ margin-top: 34%;
+ width: 100%;
+ margin-left: 0%;
+}
+.latest-release-tiles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.latest-release-tiles>div{
+  height: 10%;
+  width: 48%;
+  margin-left: 5px 0px white;
+
+}
+.card {
+  display: flex;
+  flex-direction: row;
+  transition: box-shadow ease-in-out 0.1s;
+  justify-content: center;
+  margin-left: 0%;
+
+}
+.tile{
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: row;
+    /* justify-content: center;*/
+     justify-content: space-around;
+     align-items: center;
+     justify-content:flex-start;
+     margin-top: 2px;
+     margin-bottom: 2px;
+
+     
+}
+
+.tile img{
+      height: 60%;
+      width: 100px;
+      border-radius: 5%;
+      position: relative;
+      margin: 3%;
+      
+}
+.card:hover{
+      box-shadow: 0px 0px 2px 2px white;
+      
+}
+
+
+
+.play-button i{
+  position: absolute;
+  opacity: 0;
+  color: white;
+} 
+.card:hover{
+ background-color: black;
+
+}
+/*only while hovering over card--pay button appears*/
+.card:hover div div i{
+ opacity: 1;
+ transition: ease 0.2s;
+
+}
+.song-description{
+  margin-left: -5%;
+
+}
+
+
+
+
+
+.options {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+  text-align: right;
+  margin-left: auto;
+  margin-right: 5%;
+  margin-top: 2%;
+  font-size: 100%;
+}
+/* this is for the latest release drop down menu */
+.latest-release-dropdown {
+  position: absolute;
+  background-color: #000000f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  top: 20px;
+  right: 0px;
+  overflow: hidden;
+  z-index: 2;
+  border: 1px solid black;
+  box-shadow: 0px 0px 2px 1px black;
+  transition: all ease-in-out 0.3s;
+}
+/* icon in the latest release drop down */
+.fa-ellipsis-h {
+  cursor: pointer;
+}
+/* this input is for the latest release drop down */
+input[type="checkbox"] {
+  display: none;
+}
+/* checking it, will trigger the latest release dropdown */
+input[type="checkbox"]:checked ~ .latest-release-dropdown {
+  width: 440%;
+  height: auto;
+  opacity: 1;
+  padding: 5px;
+}
+/* options in the lastest release drop down */
+.drop-item p{
+  display: flex;
+  flex-direction: row;
+  
+}
+.drop-item p i{
+ float: left;
+}
+
+ 
+.options p{
+      vertical-align: middle;
+      margin-left: 10%;
+      margin: 0px;
+      transition: ease-in 0.5s ;
+
+}
+.fa-info-circle{
+  margin-right: 48px;
+}
+.fa-play-circle{
+  margin-right: 32px;
+}
+.fa-music{
+  margin-right: 9px;
+}
+.fa-list-ul{
+  margin-right: 10px;
+}
+.popular-artists-layout{
+     height: auto;
+     width: 100%;
+}
+.popular-artists{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    top: 8%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    justify-content: space-around;
+}
+.popular-artists-layout h2{
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+.popular-artists-box{
+          margin-top: 5%;
+         height:100%;
+         width: 20%;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+}
+.popular-artists-box a img{
+
+          height:auto;
+          width: 94%;
+          border-radius: 50%;
+
+
+}
+.popular-artists-box p{
+  font-family: sans-serif;
+  color: white;
+  font-weight: 900;
+}
+.popular-artists div{
+    opacity: 1;
+
+}
+.popular-artists div:hover{
+    opacity: 0.5;
+    transition: ease 0.2s;
+    box-shadow: 6px red;
+
+}
+/*play button is set as tranparent if not hovered*/
+.play-key i{
+   height:auto;
+  width: 94%;
+  opacity: 0;
+  color: white;
+  position: absolute;
+  z-index: 2;
+  cursor: pointer;
+  transition: ease 0.2s;
+  font-size: 150%;
+  bottom: 40%;
+
+}    
+/*during hovering play button is set as opaque*/
+.popular-artists div:hover .play-key i{
+opacity: 1;
+
+}
+.stations{
+       margin-top: 10%;
+       height: 30%;
+       width: 100%;
+       background-color: orange;
+       padding-top: 7%;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       /*to cring the icon style created using 3 divisions to the middle.*/
+       
+}
+.stations-iconstyle{
+      height: 100%;
+      width: 30%;
+      position: relative;
+      top: -14%;
+}
+/*deals with the stations icon created */
+.color1{
+        position: relative;
+       height:40%;
+       width: 60%;
+       background-color:#09e417;
+       margin-left: 10%;
+       margin-top: 10%;
+       padding: 1%;
+
+}
+.color2{
+       position: absolute;
+       height:140%;
+       width: 80%;
+       background-color:#e40928;
+       margin-left: 8%;
+       margin-top: -10%;
+       overflow: visible;
+
+
+
+}
+.color3{
+        position: absolute;
+       height:140%;
+       width: 80%;
+       background-color:#2909e4;
+       margin-left: 10%;
+       margin-top: -13%;
+       font-size: 31px;
+       color: white;
+       font-family:sans-serif;
+       text-align: center;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-around;
+}
+.play-station img{
+        height: 80%;
+        width: 60%;
+        border-radius: 50%;
+
+}
+.stations-content{
+  display: flex;
+  height: 100%;
+  width: 70%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.theme{
+  height: 60%;
+  width: auto;
+ text-align: center;
+ color: white;
+ font-family: monospace;
+ font-style:normal ;
+ font-weight: 900;
+ border: 2px solid orange;
+ font-size: 170%;
+}
+.theme:hover img{
+transition: ease-in 0.3s;
+box-shadow: 2px 2px 2px 2px red;
+}
+.theme img{
+  height: 30%;
+  width: 40%;
+  min-height: 80px;
+  /*min-height:;*/
+  min-width: 80px;
+  border-radius: 50%;
+}
+.theme p{
+   position: relative;
+   top: -73%;
+   left: 1%;
+}
+.special-section{
+  margin-top: 5%;
+   display: flex;
+   flex-direction: row;
+   height: 45%;
+   width: 100%;
+  /* border: 4px solid white;*/
+   justify-content: space-around;
+   overflow: hidden;
+
+
+}
+.special-section-box{
+height: 74%;
+width: 100%;
+overflow: hidden;
+display: block;
+}
+.special-section-box img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+
+
+}
+.special-section-box img:hover{
+  transform: scale(1.75);
+  transition: all ease-in 0.5s;
+}
+.special-section-box p{
+ color: white;
+ font-weight: 700;
+ font-family: sans-serif;
+ font-size: 100%;
+ position: relative;
+ left: 0%;
+ text-align: center;
+ top: -32%;
+}
+.latest-english{
+height: 40%;
+width: 100%;
+margin-top: 5%;
+
+}
+.latest-english-content{
+  height: auto;
+   margin-top: 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+
+.latest-english-box img{
+  margin-top: 5%;
+
+  height: 50%;
+  width: 60%;
+
+}
+.latest-english-box img:hover{
+ box-shadow: 0px 0px 10px 1px white;
+}
+
+.latest-english-box h4{
+ font-size: 100%;
+}
+.latest-english-box p{
+ font-size: 80%;
+ color: yellow;
+}
+.latest-hindi{
+height: 40%;
+width: 100%;
+margin-top: 5%;
+
+}
+.latest-hindi-content{
+   margin-top: 5%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+
+}
+
+.latest-hindi-box img{
+  margin-top: 5%;
+  height: 50%;
+  width: 60%;
+
+}
+.latest-hindi-box h4{
+ font-size: 100%;
+}
+.latest-hindi-box p{
+ font-size: 80%;
+ color: yellow;
+}
+.latest-hindi-box img:hover{
+ box-shadow: 0px 0px 10px 1px white;
+}
+.section-2{
+  margin-left: 4%;
+ height: auto;
+ width: 30%;
+}
+.section-2-header{
+ color: white;
+ display: inline;
+
+}
+.section-2-header h1{
+ position: relative;
+ top: 5%;
+ left: 10%;
+}
+.section-2-header a{
+      position: relative;
+      left: 80%;
+      color: lightgreen;
+}
+
+.queue-options {
+  position: fixed;
+  right: 4%;
+  top: 14%;
+  background-color: #f8f9fa;
+  width: 10%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1%;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 2; /* to cover the heart icon */
+  opacity: 0;
+  transform: scale(0);
+  transition: all ease-in-out 0.25s;
+}
+#queue-option-box:target {
+  opacity: 1;
+  transform: scale(1);
+}
+.queue-options {
+  color: black;
+}
+.queue-options p {
+  text-align: center;
+}
+.queue-options p a {
+  text-decoration: none;
+}
+.playlist-content-layout{
+ height: 60vh;
+ width: 100%;
+ margin-top: 10%;
+ margin-right: 0%;
+
+
+ display: block;
+ /*flex-direction: column;
+ justify-content: flex-start;*/
+ overflow: scroll;
+ /*background-color: #6b58db;*/
+ padding: 5%;
+}
+.playlist-content-layout::-webkit-scrollbar {
+  display: none;
+}
+
+.content-box{
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-start;
+
+}
+.content-box{
+ height: 19%;
+ max-height: 125px;
+ width: auto;
+ margin-top: 5%;
+ margin-bottom: 5%;
+}
+.content-box:hover{
+ background-color: black;
+ box-shadow: 0px 0px 2px 2px white;
+ transition: ease-in 0.1s;
+ 
+}
+.content-box:hover i{
+ color: red;
+ 
+}
+.content-box p{
+ color: white;
+ font-size: 100%;
+ text-align: center;
+ position: relative;
+ left: 0%;
+ margin-right: 5%;
+
+}
+.content-box i{
+ position: relative;
+ right:-10%;
+ top: 20%;
+ font-size: 150%;
+
+}
+.content-box img{
+ height: 100%;
+ width: 25%;
+ margin-right: 17%; 
+}
+.content-box div{
+  height: 100%;
+  width: 30%;
+  margin-left: -10%;
+ }
+ footer {
+  position: absolute;
+  bottom: 1px;
+  width: 100vw;
+  height: 60px;
+  background-color: #282828;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: nowrap;
+  padding: 0px 3%;
+  box-sizing: border-box;
+  z-index: 6;
+  margin-left: -1%;
+}
+/* footer is divided into 3 parts */
+/* 1. first part of the footer */
+.active-song-description {
+  /* border:1px solid white; */
+  height: 90%;
+  width: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+/* the current song which is being played, this is the image container for that. */
+#song-image {
+  width: 50px;
+  height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+}
+/* current song image */
+#song-image img {
+  width: 125%;
+  height: 100%;
+}
+/* heart and ban icon */
+.heart-and-ban-icon {
+  height: 100%;
+  padding-top: 4%;
+  color: white;
+}
+/* song decscription */
+.song-desc {
+  margin-right: 1%;
+  margin-left: 1%;
+}
+/* song name */
+.song-desc div:nth-child(1) {
+  font-size: 100%;
+}
+/* song author */
+.song-desc div:nth-child(2) {
+  font-size: 80%;
+}
+
+/* 2. Second part of the footer*/
+.player {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  color: white;
+
+}
+/* controls is the container for all the center controls of the player */
+.controls {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+}
+/* this is the song-duration slider */
+#slider {
+  width: 100%;
+  font-size: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+/* ////////// */
+.time {
+  margin: 0px 10px;
+}
+
+/* adjusting the slider for better visuals */
+.slidecontainer {
+  width: 100%;
+}
+/* for audio and main center player */
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: white;
+  outline: none;
+  opacity: 0.5;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  color: white;
+}
+/* hover effect for the slider */
+.slider:hover {
+  opacity: 1;
+}
+/* these are for adjusting the dimensions and default styling of the long-slider */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: #007bff;
+  cursor: pointer;
+}
+/* this is the circular thumb, which can be moved across the div */
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+/* third part of the footer */
+/* this contains the extra icons and slider for volume */
+/* this is also a container */
+.extras {
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
